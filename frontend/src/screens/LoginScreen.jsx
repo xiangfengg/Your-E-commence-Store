@@ -43,7 +43,7 @@ const LoginScreen = () => {
       // login successful , dispatch the data return from the login mutation 
       navigate(redirect);
     } catch (err) {
-      console.log(err.data.message)
+      
       toast.error(err?.data?.message || err.message);
     }
   }
