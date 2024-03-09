@@ -3,7 +3,7 @@ import express from 'express';
 import dotenv from 'dotenv'
 dotenv.config()
 import connectDB from './config/db.js';
-import cors from 'cors';
+
 
 import userRoutes from './routes/userRoutes.js';
 import productRoutes from './routes/productRoutes.js';
@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 //parse cookie send together with the request & make it available in the req.cookie object 
 app.use(cookieParser());
 // Enable CORS for all routes
-app.use(cors());
+
 connectDB();
 
 // routes

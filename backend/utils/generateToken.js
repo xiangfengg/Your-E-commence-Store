@@ -22,7 +22,7 @@ const generateToken = (res, userId) => {
     httpOnly: true, 
     secure:process.env.NODE.ENV!='development',
     sameSite: 'strict', // Prevent CSRF attacks
-    maxAge: 24 * 60 * 60 * 1000, // 1d in milliseconds
+    maxAge: 30*24 * 60 * 60 * 1000, // 1d in milliseconds
   });
 };
 
