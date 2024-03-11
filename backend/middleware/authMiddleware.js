@@ -7,7 +7,7 @@ const protect = asyncHandler(async (req, res, next) => {
   // let token;
 
   // Read JWT from the 'jwt' cookie from the generatetoken file  
- let token = req.cookies.jwt;
+ let token = req.cookies.token;
 
   if (token) {
     try {
