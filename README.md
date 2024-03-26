@@ -2,7 +2,7 @@
 
  ## Pre Requisite
  
-   node version: 20 and above  https://nodejs.org/en
+   Node version: 20 and above  https://nodejs.org/en
    
    MongoDB URL : create your own at https://www.mongodb.com/
    
@@ -30,31 +30,28 @@ cd frontend
 
 npm install
 ```
-Run both frontend & backend 
+Run both Frontend & Backend 
 ```
 npm run dev
 ```
 
-Run frontend only
+Run Frontend 
 ```
 npm run client 
 ```
-
-
-backend 
+Run Backend 
 ```
 npm start
 ```
 
 
 ## Seed Database 
-+ importing data 
++ Importing data 
 ```npm run data:import```
-- deleting data
+- Deleting data
 ```npm run data:destroy```
 
 ## User Login 
-
 ```
 admin@email.com (Admin)
 123456
